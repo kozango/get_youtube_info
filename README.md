@@ -1,6 +1,6 @@
-# 経営中毒 YouTube コンシェルジュ（ミニマム版）
+# YouTube Subtitle Extractor（ミニマム版）
 
-YouTubeチャンネル/再生リストから字幕付き動画のメタ情報＋字幕を取得し、CSV/.txt形式で出力するツールです。
+YouTubeチャンネルや再生リストから字幕付き動画のメタ情報＋字幕を取得し、CSV/.txt形式で出力するツールです。
 
 ## 特徴
 - 字幕付き動画のみ抽出（日本語・英語対応）
@@ -15,12 +15,12 @@ YouTubeチャンネル/再生リストから字幕付き動画のメタ情報＋
 3. Dockerイメージをビルド
 
 ```bash
-docker build -t keiei_youtube_info .
+docker build -t youtube_subtitle_extractor .
 ```
 
 4. 実行例
 ```bash
-docker run --rm --env-file .env -v $(pwd)/output:/app/output keiei_youtube_info --help
+docker run --rm --env-file .env -v $(pwd)/output:/app/output youtube_subtitle_extractor --help
 ```
 
 ## セキュリティ
